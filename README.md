@@ -62,7 +62,7 @@ To submit jobs to the cluster, you need to first make sure your voms proxy is se
 
 You can check your proxy has been set up correctly with ```voms-proxy-info```. Make sure it is valid and located under ```/user/username```, which is where condor will look for it.
 
-Next, you need to setup working directories for your jobs that contains the information for what each job should do, which is passed on the corresponding condor job. This is done with the ```submission/write_workdirs.py``` script. Instead of passing many arguments to this script, we use a config file ```submission/submission_config.py``` to setup the everything with the relevant details instead. Currently there are 9 variables that are declared in the config:
+Next, you need to setup working directories for your jobs that contains the information for what each job should do, which is passed on the corresponding condor job. This is done with the ```submission/write_workdirs.py``` script. Instead of passing many arguments to this script, we use a config file ```submission/submission_config.py``` to setup everything with the relevant details instead. Currently there are 9 variables that are declared in the config:
 
 
 - ```filesPerJob```: declares the number of files that each job should run over. The entire fileset is then automatically split so that each job (apart from potentially the last) gets the specified number of input files
