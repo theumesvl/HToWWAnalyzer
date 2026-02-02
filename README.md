@@ -4,7 +4,7 @@
 You can install the framework with all its dependencies via:
 
 ```
-git clone [git@github.com:IIHE-Hc-Analysis/NanoHJetAnalyser.git](https://github.com/theumesvl/HToWWAnalyzer)
+git clone https://github.com/theumesvl/HToWWAnalyzer
 cd HToWWAnalyzer
 git submodule init
 git submodule update
